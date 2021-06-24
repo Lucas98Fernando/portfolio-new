@@ -1,0 +1,46 @@
+/* ----- All Browsers - Side Bar ----- */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--v-primary-base);
+    border: solid 1px var(--v-primary-base);
+  }
+  
+  /* ----- All Browsers - Body ----- */
+  .v-navigation-drawer__content {
+    margin-right: 3px;
+  }
+  
+  .v-navigation-drawer__content::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .v-navigation-drawer__content::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 3px 0;
+  }
+  
+  .v-navigation-drawer__content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 15px;
+  }
+  
+  /*--- Firefox - Body ---*/
+  :root {
+    scrollbar-color: var(--v-primary-base);
+    scrollbar-width: thin;
+  }
+  
+  /*--- Firefox - Side Bar ---*/
+  :root .v-navigation-drawer__content {
+    scrollbar-color: var(--v-primary-base);
+    scrollbar-width: thin;
+  }
+  
