@@ -1,5 +1,5 @@
 <template>
-  <div class="features">
+  <div id="features">
     <v-row justify="center" class="text-center">
       <v-col cols="12">
         <h2 id="title-features" class="mb-3">
@@ -69,7 +69,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/sass/responsive";
 
-.features {
+#features {
   #title-features {
     color: var(--v-primary-base);
     font-size: 2.1rem;

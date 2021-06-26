@@ -2,19 +2,30 @@
   <div class="app-bar">
     <div class="content-left">
       <div class="logo">
-        <img src="../../assets/images/logo.svg" alt="" />
+        <img src="../../assets/images/logo.svg" alt="Logo Lucas Dev" />
       </div>
-      <div class="lucas-dev">Lucas <span>Dev</span></div>
+      <div class="lucas-dev ml-3">Lucas <span>Dev</span></div>
     </div>
     <div class="content-right">
-      <v-icon color="primary" size="40">mdi-menu</v-icon>
+      <v-icon @click="drawerShow" color="primary" size="40">mdi-menu</v-icon>
     </div>
+    <drawer />
   </div>
 </template>
 
 <script>
+import Drawer from "@/components/layout/Drawer.vue";
+
 export default {
   name: "AppBar",
+  components: {
+    Drawer,
+  },
+  methods: {
+    drawerShow() {
+      this.$root.$emit("Drawer::show");
+    },
+  },
 };
 </script>
 
@@ -28,24 +39,6 @@ export default {
   .content-left {
     display: flex;
     align-items: center;
-
-    .logo {
-      img {
-        width: 60px;
-      }
-    }
-
-    .lucas-dev {
-      margin-left: 1rem;
-      color: var(--v-primary-base);
-      font-weight: 500;
-      font-size: 1.3rem;
-      font-family: $bigSholders;
-
-      span {
-        color: var(--v-secondary-base);
-      }
-    }
   }
 }
 </style>

@@ -11,6 +11,24 @@ img {
     height: auto;
 }
 
-.hero, .about-me, .features {
+#hero, #about-me, #features, #skills {
     padding: 3rem 0;
 }
+
+// Logo e Nome
+.logo {
+    img {
+      width: 60px;
+    }
+  }
+
+  .lucas-dev {
+    color: var(--v-primary-base);
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-family: $bigSholders;
+
+    span {
+      color: var(--v-secondary-base);
+    }
+  }

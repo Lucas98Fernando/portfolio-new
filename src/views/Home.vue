@@ -4,6 +4,7 @@
     <hero />
     <about-me />
     <features />
+    <skills />
   </v-container>
 </template>
 
@@ -12,6 +13,7 @@ import AppBar from "@/components/layout/AppBar.vue";
 import Hero from "@/components/sections/Hero.vue";
 import AboutMe from "@/components/sections/AboutMe.vue";
 import Features from "@/components/sections/Features.vue";
+import Skills from "@/components/sections/Skills.vue";
 
 export default {
   name: "Home",
@@ -21,6 +23,7 @@ export default {
     Hero,
     AboutMe,
     Features,
+    Skills,
   },
 };
 </script>
