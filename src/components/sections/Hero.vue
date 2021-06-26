@@ -1,5 +1,5 @@
 <template>
-  <div class="hero py-4">
+  <div class="hero">
     <v-row align="center" justify="space-between" :class="alignment">
       <v-col cols="12" md="6" sm="12" :order="orderInfo">
         <span id="welcome">Hello, world !</span>
@@ -55,6 +55,8 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
+  /* background-image: url("../../assets/images/bg-workspace.svg");
+  background-size: cover; */
   #welcome,
   #dev {
     color: var(--v-blackDark-lighten4);

@@ -1,5 +1,5 @@
 <template>
-  <div class="about-me py-4">
+  <div class="about-me">
     <v-row align="center" :class="alignment">
       <v-col cols="12" md="6">
         <img src="../../assets/images/about.svg" alt="Conhecendo sobre mim" />
@@ -26,7 +26,7 @@
       </v-col>
     </v-row>
     <v-row align="center" justify="center">
-      <v-btn color="secondary" class="rounded-xl" x-large
+      <v-btn id="btn-cv" color="secondary" class="rounded-xl" x-large
         ><v-icon class="mr-2">mdi-download</v-icon>Baixar CV</v-btn
       >
     </v-row>
@@ -38,13 +38,12 @@ export default {
   name: "AboutMe",
   data() {
     return {
-      alignment: "",
+      alignment: "text-right",
     };
   },
   mounted() {
-    this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs
-      ? (this.alignment = "text-center")
-      : (this.alignment = "text-right");
+    if (this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs)
+      this.alignment = "text-center";
   },
 };
 </script>
@@ -54,6 +53,11 @@ export default {
   #title-about {
     color: var(--v-primary-base);
     font-size: 2.1rem;
+  }
+
+  #btn-cv {
+    text-transform: none;
+    box-shadow: 1px 4px 8px 2px#7209B740;
   }
 }
 </style>
