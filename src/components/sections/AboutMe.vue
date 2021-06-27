@@ -7,7 +7,7 @@
       <v-col cols="12" md="6">
         <v-card id="card-about" rounded="xl">
           <v-card-text>
-            <h2 id="title-about" class="mb-3">
+            <h2 id="title-section" class="mb-3">
               <v-icon color="secondary" class="mr-2" size="40"
                 >mdi-console-line</v-icon
               >
@@ -50,22 +50,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/sass/responsive";
-
 #about-me {
-  #title-about {
-    color: var(--v-primary-base);
-    font-size: 2.1rem;
-  }
-
-  #card-about {
-    box-shadow: 1px 4px 25px 2px#FE762480;
-
-    @include responsive(sm) {
-      box-shadow: 1px 1px 2px 2px#FE762480;
-    }
-  }
-
   #btn-cv {
     text-transform: none;
     box-shadow: 1px 4px 8px 2px#7209B740;

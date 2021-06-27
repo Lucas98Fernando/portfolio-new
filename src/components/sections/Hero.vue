@@ -5,7 +5,7 @@
         <span id="welcome">Hello, world !</span>
         <h1 id="me">Me chamo <span>Lucas Fernando</span></h1>
         <span id="dev">Front-end developer</span>
-        <div class="cta-group mt-3">
+        <div class="cta-group mt-4">
           <v-btn
             color="primary"
             id="btn-hero"

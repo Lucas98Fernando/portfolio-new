@@ -1,34 +1,65 @@
+@import "./responsive";
+
 .v-application {
-    font-family: $poppins;
+  font-family: $poppins;
 }
 
 .v-btn {
-    letter-spacing: 0 !important;
+  letter-spacing: 0 !important;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-#hero, #about-me, #features, #skills {
-    padding: 3rem 0;
+#hero,
+#about-me,
+#features,
+#skills,
+#projects {
+  padding: 3rem 0;
 }
 
 // Logo e Nome
 .logo {
-    img {
-      width: 60px;
+  img {
+    width: 60px;
+  }
+}
+
+.lucas-dev {
+  color: var(--v-primary-base);
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: $bigSholders;
+
+  span {
+    color: var(--v-secondary-base);
+  }
+}
+
+#card-about,
+#card-features,
+#card-projects {
+  box-shadow: 0px 0px 5px 1px#FE762480;
+
+  &:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: 1px 4px 25px 2px#FE762480;
+
+    @include responsive(sm) {
+      box-shadow: 1px 2px 3px 2px#FE762480;
     }
   }
+}
 
-  .lucas-dev {
-    color: var(--v-primary-base);
-    font-weight: 500;
-    font-size: 1.3rem;
-    font-family: $bigSholders;
+// Títulos de cada sessão
+#title-section {
+  color: var(--v-primary-base);
+  font-size: 2.1rem;
+}
 
-    span {
-      color: var(--v-secondary-base);
-    }
-  }
+#title-project {
+  color: var(--v-secondary-base);
+}

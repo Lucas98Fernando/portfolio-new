@@ -2,7 +2,7 @@
   <div id="features">
     <v-row justify="center" class="text-center">
       <v-col cols="12">
-        <h2 id="title-features" class="mb-3">
+        <h2 id="title-section" class="mb-3">
           <v-icon color="secondary" class="mr-2" size="40"
             >mdi-console-line</v-icon
           >
@@ -16,7 +16,7 @@
         v-for="item in items"
         class="d-flex align-items-stretch"
       >
-        <v-card id="card-features" rounded="xl">
+        <v-card id="card-features" class="mx-auto" width="100%" rounded="xl">
           <v-card-text id="card-content">
             <img :id="item.idImg" :src="item.src" :alt="item.alt" />
             <h3 class="card-title mt-4 mb-3">{{ item.title }}</h3>
@@ -67,25 +67,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/sass/responsive";
-
 #features {
-  #title-features {
-    color: var(--v-primary-base);
-    font-size: 2.1rem;
-  }
-
   .v-card.v-sheet {
     display: flex;
     align-items: stretch;
-  }
-
-  #card-features {
-    box-shadow: 1px 4px 25px 2px#FE762480;
-
-    @include responsive(sm) {
-      box-shadow: 1px 2px 3px 2px#FE762480;
-    }
   }
 
   .card-title {

@@ -2,7 +2,7 @@
   <div id="skills">
     <v-row justify="center" class="text-center">
       <v-col cols="12">
-        <h2 id="title-skills" class="mb-3">
+        <h2 id="title-section" class="mb-3">
           <v-icon color="secondary" class="mr-2" size="40"
             >mdi-console-line</v-icon
           >
@@ -25,11 +25,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-#skills {
-  #title-skills {
-    color: var(--v-primary-base);
-    font-size: 2.1rem;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
