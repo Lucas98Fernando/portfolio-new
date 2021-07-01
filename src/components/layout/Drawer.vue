@@ -2,8 +2,6 @@
   <v-navigation-drawer v-model="drawer" fixed right temporary>
     <v-list-item>
       <v-list-item-content class="text-center">
-        <!--  <v-list-item-title class="text-h6"> Application </v-list-item-title>
-        <v-list-item-subtitle> subtext </v-list-item-subtitle> -->
         <div class="logo">
           <img src="../../assets/images/logo.svg" alt="" />
         </div>

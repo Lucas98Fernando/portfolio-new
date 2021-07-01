@@ -129,7 +129,7 @@ export default {
           description:
             "Quiz sobre The Witcher 3 - O Projeto foi desenvolvido durante a Semana da Imersão Alura - React JS e Next JS.",
         },
-         {
+        {
           id: 6,
           src: require("../../assets/images/nubank-clone.jpg"),
           github: "https://github.com/Lucas98Fernando/nubank-vue",

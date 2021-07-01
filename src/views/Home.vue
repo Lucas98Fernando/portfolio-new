@@ -6,6 +6,7 @@
     <features />
     <skills />
     <projects />
+    <contact />
   </v-container>
 </template>
 
@@ -16,6 +17,7 @@ import AboutMe from "@/components/sections/AboutMe.vue";
 import Features from "@/components/sections/Features.vue";
 import Skills from "@/components/sections/Skills.vue";
 import Projects from "@/components/sections/Projects.vue";
+import Contact from "@/components/sections/Contact.vue";
 
 export default {
   name: "Home",
@@ -27,6 +29,7 @@ export default {
     Features,
     Skills,
     Projects,
+    Contact,
   },
 };
 </script>
