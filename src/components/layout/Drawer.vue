@@ -12,7 +12,12 @@
     <v-divider></v-divider>
 
     <v-list dense nav>
-      <v-list-item v-for="item in items" :key="item.title" link>
+      <v-list-item
+        v-for="item in items"
+        :key="item.title"
+        link
+        :href="item.href"
+      >
         <v-list-item-icon>
           <v-icon>{{ item.icon }}</v-icon>
         </v-list-item-icon>
@@ -32,12 +37,28 @@ export default {
     return {
       drawer: false,
       items: [
-        { title: "Início", icon: "mdi-home-variant-outline" },
-        { title: "Sobre mim", icon: "mdi-account-outline" },
-        { title: "Características", icon: "mdi-card-account-details-outline" },
-        { title: "Habilidades", icon: "mdi-badge-account-outline" },
-        { title: "Projetos", icon: "mdi-briefcase-variant-outline" },
-        { title: "Contato", icon: "mdi-card-account-phone-outline" },
+        { title: "Início", icon: "mdi-home-variant-outline", href: "#hero" },
+        { title: "Sobre mim", icon: "mdi-account-outline", href: "#about-me" },
+        {
+          title: "Características",
+          icon: "mdi-card-account-details-outline",
+          href: "#features",
+        },
+        {
+          title: "Habilidades",
+          icon: "mdi-badge-account-outline",
+          href: "skills",
+        },
+        {
+          title: "Projetos",
+          icon: "mdi-briefcase-variant-outline",
+          href: "#projects",
+        },
+        {
+          title: "Contato",
+          icon: "mdi-card-account-phone-outline",
+          href: "#contact",
+        },
       ],
     };
   },
