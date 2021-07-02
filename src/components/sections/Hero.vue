@@ -2,10 +2,16 @@
   <div id="hero">
     <v-row align="center" justify="space-between" :class="alignment">
       <v-col cols="12" md="6" sm="12" :order="orderInfo">
-        <span id="welcome">Hello, world !</span>
-        <h1 id="me">Me chamo <span>Lucas Fernando</span></h1>
-        <span id="dev">Front-end developer</span>
-        <div class="cta-group mt-4">
+        <span id="welcome" data-aos="fade-right" data-aos-delay="200"
+          >Hello, world !</span
+        >
+        <h1 id="me" data-aos="fade-right" data-aos-delay="400">
+          Me chamo <span>Lucas Fernando</span>
+        </h1>
+        <span id="dev" data-aos="fade-right" data-aos-delay="600"
+          >Front-end developer</span
+        >
+        <div class="cta-group mt-4" data-aos="fade-right" data-aos-delay="800">
           <v-btn
             color="primary"
             id="btn-hero"
@@ -27,7 +33,12 @@
         </div>
       </v-col>
       <v-col cols="12" md="6" sm="12" :order="orderImg">
-        <img src="../../assets/images/hero.svg" alt="Café e código" />
+        <img
+          data-aos="fade-left"
+          data-aos-delay="1000"
+          src="../../assets/images/hero.svg"
+          alt="Café e código"
+        />
       </v-col>
     </v-row>
   </div>
