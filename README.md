@@ -2,7 +2,7 @@
 
 ### Olá, visitante ! Bem-vindo ao meu portfólio.
 
-Acessar 
+<a href="https://lucas-dev-portfolio.netlify.app/">Acessar</a> 
 
 <img src="src/assets/images/home.jpg">
 
