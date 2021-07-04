@@ -26,20 +26,23 @@
               </div>
             </div>
             <div>
-              <p class="mt-4 mb-3">
+              <p class="d-flex align-center mt-4 mb-3">
                 <v-icon class="mr-2" color="secondary" size="30"
                   >mdi-email-outline</v-icon
                 >
                 lucas98fernando@gmail.com
               </p>
-              <p class="mt-4">
+              <p class="d-flex align-center mt-4">
                 <v-icon class="mr-2" color="secondary" size="30"
                   >mdi-map-marker-outline</v-icon
                 >
                 Recife, PE
               </p>
             </div>
-            <v-row class="mt-4">
+            <v-row
+              class="mt-4"
+              :justify="this.$vuetify.breakpoint.xs ? 'center' : ''"
+            >
               <a href="https://github.com/Lucas98Fernando" target="_blank">
                 <v-icon color="primary" size="50">mdi-github</v-icon>
               </a>

@@ -1,4 +1,10 @@
-# portfolio
+# Portfólio - Lucas Dev
+
+### Olá, visitante ! Bem-vindo ao meu portfólio.
+
+Acessar 
+
+<img src="src/assets/images/home.jpg">
 
 ## Project setup
 ```

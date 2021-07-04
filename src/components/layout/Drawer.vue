@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer v-model="drawer" fixed right temporary>
+  <v-navigation-drawer v-model="drawer" fixed right temporary app>
     <v-list-item>
       <v-list-item-content class="text-center">
         <div class="logo">
@@ -47,7 +47,7 @@ export default {
         {
           title: "Habilidades",
           icon: "mdi-badge-account-outline",
-          href: "skills",
+          href: "#skills",
         },
         {
           title: "Projetos",
